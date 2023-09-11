@@ -10,6 +10,12 @@
     color:#212A3E;
     font-family: serif;
   }
+
+
+
+  li{
+    list-style: none;
+  }
   
   header{
       line-height:100%;
@@ -86,7 +92,55 @@
   }
   
   
+main{
+    background-color:#F1F6F9;
+    padding:130px 0;
+}
+
+.main-title{
+    margin: 0 auto;
+    text-align: center;
+    border-bottom: 2px solid #9BA4B5;
+    font-size: 50px;
+    width:55%;
+}
   
+.nav-open{
+	padding: 15px;
+	color: #fff;
+	font-size: 30px;
+	background: #9BA4B5;
+    width:60%;
+    margin:50px auto 0 auto;
+    text-align: center;
+	position: relative;
+}
+.nav-open::before{/* 閉じている時 */
+	content: "＋";
+	position: absolute;
+	right: 20px;
+}
+.nav-open.active::before{/* 開いている時 */
+	content: "－";
+}
+
+.list-wrapper{
+    display: none;
+  }
+
+.list-wrapper ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0;
+    margin:0;
+}
+
+.list-wrapper li img{
+    object-fit: cover;
+    max-width:90%;
+    display: block;
+    margin: 10px auto;
+}
   
   
   
